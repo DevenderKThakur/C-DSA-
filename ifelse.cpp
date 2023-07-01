@@ -25,16 +25,36 @@ int main() {
   // }
 
                                         // to check weather the input given is uppercase , lowercase , number 
-  char ch ;
-  cin>>ch;
-  if(ch>='A' && ch<='Z'){
-    cout<<"upercase";
+  // char ch ;
+  // cin>>ch;
+  // if(ch>='A' && ch<='Z'){
+  //   cout<<"upercase";
+  // }
+  // else if (ch>='a' && ch<='z'){
+  //   cout<<"lowercase";
+  // }else{
+  //   cout<<"number ";
+  // } 
+
+  // Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
+  int a , b;
+  int  opt ;
+  int result ;
+  cin >>a>>b;
+  cin >> opt ;
+    if(opt == 1){
+      result = a+b;
+    }
+  else if (opt == 2){
+    result = a-b;
   }
-  else if (ch>='a' && ch<='z'){
-    cout<<"lowercase";
-  }else{
-    cout<<"number ";
-  } 
+  else if (opt == 3){
+    result = a*b;
+  }
+  else {
+    result = a/b;
+  }
+  cout<<result;
 
   return 0;
  }
