@@ -37,12 +37,12 @@ int main() {
   // }
 
   // Check Leap Year Or Not
-  //  int year ;
-  // cin >> year ;
-  // if(year%4==0 ){
-  //   cout<<"leap year "; 
-  // }else{
-  //   cout<<"not a leap year ";
-  // }
+   int year ;
+  cin >> year ;
+  if(year%4==0 ){
+    cout<<"leap year "; 
+  }else{
+    cout<<"not a leap year ";
+  }
 
 }
