@@ -35,7 +35,16 @@ if(n==i){
    }
  }  
 }
-
+int triplet(int a , int b , int c ){
+  int x = a*a;
+  int y = b*b;
+  int z = c*c;
+  if(x == y+z || y == x+z || z ==x+y){
+    return true;
+  }else{
+    return false ;
+  }
+}
 int main() {
   // how to find the largest number
   // int num1,num2,num3;
@@ -54,5 +63,10 @@ int main() {
 // int n;
 // cin>>n;
 // primeOrNot(n);
+
+  // Pythagorean triplet is when the sum of the square of two numbers is equal to the square of the third number.
+ // int num1,num2,num3;
+ // cin>>num1>>num2>>num3;
+ // cout<<triplet(num1, num2, num3) ;
   return 0;
 }
