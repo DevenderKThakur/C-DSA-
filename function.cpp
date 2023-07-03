@@ -45,6 +45,24 @@ int triplet(int a , int b , int c ){
     return false ;
   }
 }
+
+void showMarks(int n){
+  if(n>=91 && n <=100){
+    cout<<"AA";
+  }else  if(n>=81 && n <=90){
+    cout<<"AB";
+  }else if(n>=71 && n <=80){
+    cout<<"BB";
+  }else if(n>=61 && n <=70){
+    cout<<"BC";
+  }else if(n>=51 && n <=60){
+    cout<<"CD";
+  }else if(n>=41 && n <=50){
+    cout<<"DD";
+  }else{
+    cout<<"Fail";
+  }
+}
 int main() {
   // how to find the largest number
   // int num1,num2,num3;
@@ -68,5 +86,15 @@ int main() {
  // int num1,num2,num3;
  // cin>>num1>>num2>>num3;
  // cout<<triplet(num1, num2, num3) ;
+
+//  Given the marks of N subjects, we have to print the grade of a student based on the following grade slab.
+// If Percentage Marks > 90, Grade is A+
+// If 70 <= Percentage Marks <= 89, Grade is A
+// If 60 <= Percentage Marks <= 69, Grade is B
+// If 50 <= Percentage Marks <= 59, Grade is C
+// If Percentage Marks <= 40, Grade is D
+  int marks;
+  cin>>marks;
+  showMarks(marks);
   return 0;
 }
