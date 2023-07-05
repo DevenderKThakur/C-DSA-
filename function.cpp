@@ -3,6 +3,13 @@ using namespace std;
 int  product(int a , int b){
   return a*b;
 }
+void sumNum(int n){
+  int sum = 0;
+  for(int i = 0;i<n;i++){
+    sum = sum + i ;
+  }
+  cout<<sum;
+}
 void largest(int a , int b , int c ){
   if(a>b && a>c){
     cout<<a;
@@ -93,8 +100,11 @@ int main() {
 // If 60 <= Percentage Marks <= 69, Grade is B
 // If 50 <= Percentage Marks <= 59, Grade is C
 // If Percentage Marks <= 40, Grade is D
-  int marks;
-  cin>>marks;
-  showMarks(marks);
+  // int marks;
+  // cin>>marks;
+  // showMarks(marks);
+  int n ;
+  cin>>n;
+  sumNum(n);
   return 0;
 }
